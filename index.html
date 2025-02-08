@@ -13,71 +13,73 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <div class="card">
-      <div class="card__front">
-        <div class="card__front__icon">
-          <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
-              fill="#FC7614"
-            />
-          </svg>
-        </div>
-        <div class="card__front__content">
-          <h1 class="card__front__title">How did we do?</h1>
-          <p>
-            Please let us know how we did with your support request. All
-            feedback is appreciated to help us improve our offering!
-          </p>
-        </div>
-        <form class="card__front__form">
-          <div class="card__front__form__rating">
-            <div class="card__front__form__rating__star">
-              <input
-                type="radio"
-                id="star1"
-                name="rating"
-                value="1"
-                required="true"
+    <main>
+      <div class="card">
+        <div class="card__front">
+          <div class="card__front__icon">
+            <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+                fill="#FC7614"
               />
-              <label for="star1">1</label>
-            </div>
-            <div class="card__front__form__rating__star">
-              <input type="radio" id="star2" name="rating" value="2" />
-              <label for="star2">2</label>
-            </div>
-            <div class="card__front__form__rating__star">
-              <input type="radio" id="star3" name="rating" value="3" />
-              <label for="star3">3</label>
-            </div>
-            <div class="card__front__form__rating__star">
-              <input type="radio" id="star4" name="rating" value="4" />
-              <label for="star4">4</label>
-            </div>
-            <div class="card__front__form__rating__star">
-              <input type="radio" id="star5" name="rating" value="5" />
-              <label for="star5">5</label>
-            </div>
+            </svg>
           </div>
-          <button>SUBMIT</button>
-        </form>
-      </div>
-      <div class="card__back">
-        <div class="card__back__top">
-          <div class="card__back__image">
-            <img src="images/illustration-thank-you.svg" alt="" />
+          <div class="card__front__content">
+            <h1 class="card__front__title">How did we do?</h1>
+            <p>
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
           </div>
-          <p>You selected <span data-rating="4"></span> out of 5</p>
+          <form class="card__front__form">
+            <div class="card__front__form__rating">
+              <div class="card__front__form__rating__star">
+                <input
+                  type="radio"
+                  id="star1"
+                  name="rating"
+                  value="1"
+                  required
+                />
+                <label for="star1">1</label>
+              </div>
+              <div class="card__front__form__rating__star">
+                <input type="radio" id="star2" name="rating" value="2" />
+                <label for="star2">2</label>
+              </div>
+              <div class="card__front__form__rating__star">
+                <input type="radio" id="star3" name="rating" value="3" />
+                <label for="star3">3</label>
+              </div>
+              <div class="card__front__form__rating__star">
+                <input type="radio" id="star4" name="rating" value="4" />
+                <label for="star4">4</label>
+              </div>
+              <div class="card__front__form__rating__star">
+                <input type="radio" id="star5" name="rating" value="5" />
+                <label for="star5">5</label>
+              </div>
+            </div>
+            <button>SUBMIT</button>
+          </form>
         </div>
-        <div class="card__back__content">
-          <h2 class="card__back__title">Thank you!</h2>
-          <p>
-            We appreciate you taking the time to give a rating. If you ever need
-            more support, don’t hesitate to get in touch!
-          </p>
+        <div class="card__back">
+          <div class="card__back__top">
+            <div class="card__back__image">
+              <img src="images/illustration-thank-you.svg" alt="" />
+            </div>
+            <p>You selected <span data-rating="4"></span> out of 5</p>
+          </div>
+          <div class="card__back__content">
+            <h2 class="card__back__title">Thank you!</h2>
+            <p>
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <script src="script.js" type="text/javascript"></script>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>
